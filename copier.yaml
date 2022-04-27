@@ -1,0 +1,17 @@
+_subdirectory: output
+
+# Configure jinja2 defaults to make it easier to work with Github Actions
+_templates_suffix: .jinja
+_envops:
+  block_end_string: "%]"
+  block_start_string: "[%"
+  comment_end_string: "#]"
+  comment_start_string: "[#"
+  keep_trailing_newline: true
+  variable_end_string: "]]"
+  variable_start_string: "[["
+
+main_branch_name:
+  type: str
+  help: Name of the main branch
+  default: main

@@ -1,0 +1,17 @@
+commands: []
+data:
+  default:
+    data:
+      main_branch_name: main
+    folder_name: flexlate-github-actions-example
+run_configs:
+  default:
+    data_name: default
+    publish:
+      post_init:
+        - gh repo create --public --source=.
+        - git push origin master
+        - git push --all origin
+      post_update:
+        - fxt merge
+        - git push --all origin
