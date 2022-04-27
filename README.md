@@ -15,3 +15,7 @@ fxt add output copier-flexlate-github-actions
 
 Make sure you add this at the root of your project so that it will put the
 workflow files in the correct folder.
+
+# Example
+
+See what the output looks like in the [example repository](https://github.com/nickderobertis/flexlate-github-actions-example).
