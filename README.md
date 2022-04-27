@@ -3,6 +3,9 @@
 This is a [Copier](https://copier.readthedocs.io/en/stable/) template to add the official Flexlate Github Action workflows to
 automate using [Flexlate](https://nickderobertis.github.io/flexlate/) on CI.
 
+See an overview of using Flexlate on CI [here](https://nickderobertis.github.io/flexlate/core-concepts.html#ci-workflows). Everything will be automatically configured by using this
+template.
+
 # Usage
 
 [Add it to your project](https://nickderobertis.github.io/flexlate/tutorial/get-started/add-to-project.html)
