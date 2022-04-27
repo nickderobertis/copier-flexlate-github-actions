@@ -10,8 +10,10 @@ run_configs:
     publish:
       post_init:
         - gh repo create --public --source=.
-        - git push origin master
+        - git push origin {{ data.main_branch_name }}
         - git push --all origin
       post_update:
         - fxt merge
         - git push --all origin
+      pre_check:
+        - if [ -n "$(find . -prune -empty 2>/dev/null)" ]; then gh repo clone {{ data.folder_name }} .; else git pull origin {{ data.main_branch_name }}; fi
